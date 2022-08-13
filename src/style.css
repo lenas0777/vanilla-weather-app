@@ -4,8 +4,9 @@ body {
 
 h1 {
   font-size: 48px;
-  line-height: 60px;
+  line-height: 48px;
   color: #202124;
+  margin: 0;
 }
 ul {
   margin: 0;
@@ -14,6 +15,7 @@ ul {
 li {
   list-style: none;
   color: #70757a;
+  text-transform: capitalize;
   font-size: 12px;
   line-height: 16px;
 }
@@ -49,4 +51,7 @@ li {
 }
 .row {
   margin-bottom: 20px;
+}
+#wind {
+  text-transform: lowercase;
 }
