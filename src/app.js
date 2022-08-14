@@ -32,10 +32,21 @@ humidityElement.innerHTML=response.data.main.humidity;
 windElement.innerHTML=`${response.data.wind.speed} km/h`;
 dateElement.innerHTML= formatDate(response.data.dt*1000);
 }
-
+function search(city){
 let apiKey="7644cf0e41cb2d8fdabc6b0808cee422";
-let city="Sydney";
 let apiUrl=`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-
-
 axios.get(apiUrl).then(displayTemperature);
+}
+
+function handleSubmit(event) {
+    event.preventDefault();
+    let cityInputElement=document.querySelector("#city-input");
+    search(cityInputElement.value);
+
+}
+search("New York");
+
+
+
+let form=document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);
