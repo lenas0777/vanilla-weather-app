@@ -15,9 +15,11 @@ ul {
 li {
   list-style: none;
   color: #70757a;
-  text-transform: capitalize;
   font-size: 12px;
   line-height: 16px;
+}
+li::first-letter {
+  text-transform: capitalize;
 }
 
 .weather-app-wrapper {
