@@ -54,6 +54,16 @@ li::first-letter {
 .row {
   margin-bottom: 20px;
 }
+.weather-temperature .active {
+  color: rgb(32, 33, 36);
+  cursor: default;
+  text-decoration: none;
+
+}
+.weather-temperature .active:hover { 
+  text-decoration: none;
+}
+
 #wind {
   text-transform: lowercase;
 }
