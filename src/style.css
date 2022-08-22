@@ -36,17 +36,16 @@ li::first-letter {
   margin-right: 10px;
   height: 48px;
   width: 48px;
-
 }
-.weather-temperature strong{
+.weather-temperature strong {
   color: rgb(32, 33, 36);
   font-size: 48px;
   font-weight: 400;
   height: auto;
   letter-spacing: normal;
   line-height: 1;
-} 
-.weather-temperature .units{
+}
+.weather-temperature .units {
   position: relative;
   font-size: 16px;
   top: -24px;
@@ -58,12 +57,30 @@ li::first-letter {
   color: rgb(32, 33, 36);
   cursor: default;
   text-decoration: none;
-
 }
-.weather-temperature .active:hover { 
+.weather-temperature .active:hover {
   text-decoration: none;
 }
-
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+}
+.weather-forecast-date {
+  color: #202124;
+  font-size: 16px;
+  opacity: 0.5;
+}
+.weather-forecast-temperatures {
+  font-size: 13px;
+}
+.weather-forecast-temperature-min {
+  opacity: 0.5;
+}
 #wind {
   text-transform: lowercase;
+}
+
+#img {
+  display: block;
+  margin: auto;
 }
